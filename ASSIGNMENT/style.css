@@ -59,15 +59,25 @@ section:hover {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.name-icon{
-  width: 24px;                 
-  height: 24px;                
+.name-icon,
+.id-icon {            
   margin-right: 8px; 
 }
 
-.name-text {
-  font-size: 16px;             
-  color: #000;                 
+.name-text,
+.id-text {
+  text-align: left;
+}
+
+.image-container {
+  text-align: center;
+}
+
+center-image {
+  max-width: 500%;
+  height: 300px;
+  display: inline-block;
+  object-fit: cover;
 }
 
 p {
