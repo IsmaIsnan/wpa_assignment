@@ -181,22 +181,22 @@ button:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Custom List Points */
 .custom-points {
-  list-style: none;
-  padding: 0;
+    list-style: none;
+    padding: 0;
 }
 
 .custom-points li {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 16px;
 }
 
 .custom-points li span {
-  color: #4CAF50;
-  margin-right: 10px;
-  font-size: 18px;
+    color: #4CAF50; /* Custom color for icons */
+    margin-right: 10px;
+    font-size: 18px;
 }
 
 .bmi-icon {
