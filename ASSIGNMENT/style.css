@@ -221,3 +221,22 @@ button:hover {
 .bmi-obese .bmi-icon {
   background-color: #dc3545;
 }
+
+.health-list {
+    list-style: none;
+    padding: 0;
+}
+
+.health-list li {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.health-list i {
+    color: #28a745;
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
