@@ -8,7 +8,9 @@ const bmiWarning = document.getElementById('bmi-warning');
 const scaleContainer = document.getElementById('scale-container');
 
 // Function to calculate BMI
-function calculateBMI() {
+function calculateBMI(event) {
+    event.preventDefault(); // Prevent form submission
+
     const weight = parseFloat(weightInput.value);
     const height = parseFloat(heightInput.value) / 100; // Convert cm to meters
 
@@ -70,38 +72,25 @@ function updateBmiScale(bmiCategory) {
     ];
 
     // Create scale bars with tooltips
-    for (let i = 0; i < scaleData.length; i++) {
+    scaleData.forEach(scale => {
         const bar = document.createElement('div');
-        bar.style.backgroundColor = scaleData[i].color;
+        bar.style.backgroundColor = scale.color;
         bar.style.width = '30px';
         bar.style.height = '30px';
         bar.style.margin = '5px';
         bar.style.display = 'inline-block';
         bar.style.borderRadius = '5px';
-        bar.setAttribute('title', `${scaleData[i].label}: ${scaleData[i].category}`); // Tooltip
+        bar.setAttribute('title', `${scale.label}: ${scale.category}`); // Tooltip
 
         // Highlight the category based on the calculated BMI
-        if (scaleData[i].category === bmiCategory) {
+        if (scale.category === bmiCategory) {
             bar.style.border = '3px solid black';
         }
 
         scaleContainer.appendChild(bar);
-    }
+    });
 }
 
-// Event listener for calculate button
-calculateBtn.addEventListener('click', (event) => {
-    event.preventDefault(); // Prevent form submission
-    calculateBMI();
-});
-
-// Event listener for clear button
+// Event listeners
+calculateBtn.addEventListener('click', calculateBMI);
 clearBtn.addEventListener('click', clearBMI);
-
-// Wait for DOM content to be loaded before initializing AOS
-document.addEventListener('DOMContentLoaded', () => {
-    // Initialize AOS animations (if applicable)
-    if (typeof AOS !== 'undefined') {
-        AOS.init();
-    }
-});
