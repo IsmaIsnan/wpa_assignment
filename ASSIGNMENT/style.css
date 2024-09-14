@@ -287,4 +287,11 @@ nav {
   margin-right: 10px;           
 }
 
-
+.bmi-category {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center the content */
+    align-items: center; /* Horizontally center the content */
+    height: 100vh; /* Full viewport height to center the content vertically */
+    text-align: center; /* Center the text inside the element */
+}
