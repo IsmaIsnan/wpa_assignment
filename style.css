@@ -285,3 +285,7 @@ nav {
     height: 100vh; /* Optional: To center vertically based on viewport height */
     text-align: center; /* Center the text within the element */
 }
+
+h2 {
+    margin-bottom: 20px; /* Optional: Adjust the spacing between elements */
+}
