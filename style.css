@@ -67,7 +67,7 @@ section:hover {
 
 .name-text {
   font-size: 16px;             
-  color: #000;                
+  color: #000;                 
 }
 
 p {
@@ -276,3 +276,4 @@ nav {
   height: auto;                 
   margin-right: 10px;           
 }
+
