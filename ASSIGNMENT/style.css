@@ -287,3 +287,9 @@ nav {
   margin-right: 10px;           
 }
 
+.bmi-category {
+    width: 50%; /* Adjust width as needed */
+    margin: 0 auto; /* Centers the container horizontally */
+    text-align: center; /* Centers the text inside the element */
+}
+
