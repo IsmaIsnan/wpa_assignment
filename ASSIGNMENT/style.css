@@ -148,7 +148,6 @@ button:hover {
   transform: scale(1.05);
 }
 
-/* Mental Health Section */
 .mental-health-container {
   display: flex;
   align-items: center;
@@ -194,7 +193,7 @@ button:hover {
 }
 
 .custom-points li span {
-    color: #4CAF50; /* Custom color for icons */
+    color: #4CAF50; 
     margin-right: 10px;
     font-size: 18px;
 }
